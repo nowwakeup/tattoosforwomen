@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GoComics - Funny Comics & Everyday Moments</title>
+
+    <meta name="description" content="Discover funny comics, relatable moments, and entertaining illustrations at GoComics.">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="canonical" href="https://gocomicss.netlify.app/">
+
+    <!-- Pinterest Website Verification -->
+    <!-- Paste your actual Pinterest verification meta tag here -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GoComics - Funny Comics">
+    <meta property="og:description" content="Explore funny comics and relatable everyday moments.">
+    <meta property="og:url" content="https://gocomicss.netlify.app/">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #292929;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            padding: 18px 5%;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 800;
+            color: #252525;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #333333;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #c62828;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 35px 0 45px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.2;
+            margin: 0 0 18px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #666666;
+            font-size: 18px;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            font-size: 27px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            border: 1px solid #eeeeee;
+            border-radius: 12px;
+            padding: 22px;
+            background: #ffffff;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #666666;
+        }
+
+        .about {
+            margin-top: 45px;
+            padding: 25px;
+            background: #f8f8f8;
+            border-radius: 12px;
+        }
+
+        footer {
+            padding: 25px 20px;
+            border-top: 1px solid #eeeeee;
+            text-align: center;
+            color: #666666;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #444444;
+            margin: 0 8px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 16px 20px;
+            }
+
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+            main {
+                padding-top: 30px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <a class="logo" href="/">GoComics</a>
+
+        <nav aria-label="Main navigation">
+            <a href="/">Home</a>
+            <a href="#comics">Comics</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Funny Comics &amp; Everyday Moments</h1>
+        <p>
+            Explore entertaining comics, humorous illustrations,
+            and relatable moments inspired by everyday life.
+        </p>
+    </section>
+
+    <section id="comics">
+        <h2 class="section-title">Explore GoComics</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Funny Comics</h3>
+                <p>
+                    Enjoy lighthearted comics and amusing situations
+                    from everyday life.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Relatable Moments</h3>
+                <p>
+                    Discover humorous stories and moments that many
+                    people can relate to.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Illustrations</h3>
+                <p>
+                    Browse creative illustrations and entertaining
+                    visual stories.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About GoComics</h2>
+        <p>
+            GoComics is a website dedicated to humorous comics,
+            creative illustrations, and entertaining everyday stories.
+        </p>
+    </section>
+
+    <section id="contact" class="about">
+        <h2>Contact</h2>
+        <p>
+            For questions about this website, please use your
+            website's published contact information.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 GoComics. All rights reserved.</p>
+    <a href="/">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</footer>
+
+</body>
+</html>
