@@ -15,37 +15,43 @@
     <link rel="canonical" href="https://tattoosforwomen.com/">
 
 <!-- Pinterest visitors redirect to TattoosForWomen homepage -->
-<script>
-(function () {
-    try {
-        var params = new URLSearchParams(window.location.search);
-        var source = (params.get("utm_source") || "").toLowerCase();
-        var referrer = document.referrer;
-        var isPinterest = source === "pinterest";
+   <script>
+    (function () {
+        try {
+            var params = new URLSearchParams(window.location.search);
 
-        if (referrer) {
-            var host = new URL(referrer).hostname.toLowerCase();
+            var source = (
+                params.get("utm_source") || ""
+            ).toLowerCase();
 
-            if (
-                host === "pinterest.com" ||
-                host.endsWith(".pinterest.com") ||
-                host === "pin.it" ||
-                host.endsWith(".pin.it") ||
-                host === "pinterest.co.uk" ||
-                host.endsWith(".pinterest.co.uk")
-            ) {
-                isPinterest = true;
+            var referrer = document.referrer;
+            var isPinterest = source === "pinterest";
+
+            if (referrer) {
+                var host = new URL(referrer).hostname.toLowerCase();
+
+                if (
+                    host === "pinterest.com" ||
+                    host.endsWith(".pinterest.com") ||
+                    host === "pin.it" ||
+                    host.endsWith(".pin.it") ||
+                    host === "pinterest.co.uk" ||
+                    host.endsWith(".pinterest.co.uk")
+                ) {
+                    isPinterest = true;
+                }
             }
-        }
 
-        if (isPinterest) {
-            window.location.replace("https://tattoosforwomen.com/");
+            if (isPinterest) {
+                window.location.replace(
+                    "https://tattoosforwomen.com/"
+                );
+            }
+        } catch (error) {
+            console.error("Pinterest redirect error:", error);
         }
-    } catch (error) {
-        console.error("Pinterest redirect error:", error);
-    }
-})();
-</script>
+    })();
+    </script>
 
     <!-- Pinterest Website Verification -->
 <meta name="p:domain_verify" content="198aed2bda19cb088db87cadd92e26e2"/>
